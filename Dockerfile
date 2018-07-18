@@ -4,8 +4,9 @@ WORKDIR /app/
 COPY package.json .
 RUN npm install
 
-WORKDIR /ap/src
+WORKDIR /app/src
 COPY ./src/ .
 
+WORKDIR /app
 CMD  ["npm", "start" ] 
 
